@@ -12,6 +12,8 @@ import AnswerDetailPage from '../components/AnswerDetailPage';
 import AddQuestionPage from '../components/AddQuestionPage';
 import UserDetailPage from './UserDetailPage';
 import UserInfo from './UserPage';
+import DetialQuestionPage from '../components/DetialQuestionPage';
+import AnswerToQuestionPage from '../components/AnswerToQuestionPage';
 import SettingPage from './settingPage';
 const {CardStack} = NavigationExperimental;
 
@@ -98,6 +100,12 @@ export default class Navigator extends Component {
                         pop={this.props.pop}
                     />
                 )
+            case 'detialQuestion':{
+                return (
+                    <DetialQuestionPage
+                        push={this.props.push}
+                        pop={this.props.pop}
+                    />
             case 'userDetail':
                 return(
                     <UserDetailPage
@@ -106,6 +114,13 @@ export default class Navigator extends Component {
                         pop={this.props.pop}
                     />
                 )
+            }
+            case 'answerToQuestion':
+                return (
+                    <AnswerToQuestionPage
+                        push={this.props.push}
+                        pop={this.props.pop}
+                    />
             case 'setting':
                 return(
                     <SettingPage

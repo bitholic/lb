@@ -99,13 +99,13 @@ export default class Navigator extends Component {
                         push={this.props.push}
                         pop={this.props.pop}
                     />
-                )
+                );
             case 'detialQuestion':{
                 return (
                     <DetialQuestionPage
                         push={this.props.push}
                         pop={this.props.pop}
-                    />
+                    />);}
             case 'userDetail':
                 return(
                     <UserDetailPage
@@ -113,14 +113,13 @@ export default class Navigator extends Component {
                         push={this.props.push}
                         pop={this.props.pop}
                     />
-                )
-            }
+                );
             case 'answerToQuestion':
                 return (
                     <AnswerToQuestionPage
                         push={this.props.push}
                         pop={this.props.pop}
-                    />
+                    />);
             case 'setting':
                 return(
                     <SettingPage
